@@ -1,3 +1,5 @@
 credentials
 img
 __pycache__
+.vscode/
+auth.py

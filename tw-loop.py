@@ -16,15 +16,16 @@ twitter = Twython(
 )
 
 validacion = True
-n = 2
+n = 1/6
 mins = 60*n
-message = "how do i feel in lockdown? Me: AHHH"
-
+message = "Just tweet"
+counter = 0
 try:
     while True:
-        message += "HHHHH"
+        message += "t"
         twitter.update_status(status=message)
-        print("Tweeted: {0}".format(message))
+        counter += 1
+        print("Tweet {0}: {1}".format(counter, message))
         time.sleep(mins)
 except KeyboardInterrupt:
     print("Final loop") 
